@@ -1,0 +1,135 @@
+/* ======== COULEURS PRINCIPALES ======== */
+:root {
+  --background-color: #2f080d;
+  --text-color: #eae6e0;
+  --nav-bg: #2f080d;
+  --nav-text: #ffffff;
+  --accent-color: #eae6e0; /* pour les traits */
+}
+
+/* ======== STYLE GLOBAL ======== */
+body {
+  margin: 0;
+  font-family: 'Zilla Slab', serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* ======== NAVIGATION ======== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav .links {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .links a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* ======== TRAITS NOIRS ======== */
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin: 30px 0;
+}
+
+/* ======== IMAGES CENTRÉES ======== */
+.centered-image,
+.image-pair,
+.image-block,
+.footer-logo {
+  margin: 0 10%;
+}
+
+.centered-image img {
+  width: 100%;
+  display: block;
+}
+
+/* ======== TITRES ======== */
+.title {
+  margin: 2rem 10%;
+  font-size: 3rem;
+  text-align: left;
+}
+.text-block {
+  margin: 2rem 10%;
+  text-align: left;
+}
+
+/* ======== PAIRE D'IMAGES ======== */
+.image-pair {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.image-pair img {
+  width: 49%;
+}
+
+/* ======== BLOCS DE TEXTE ======== */
+.text-block {
+  margin: 2rem 10%;
+  text-align: left;
+}
+
+/* ======== GRANDE IMAGE + PETITE EN HAUT À DROITE ======== */
+.image-block {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 10%;
+  align-items: flex-start; /* aligne les images en haut */
+}
+
+.image-block .large {
+  width: 65%;
+}
+
+.image-block .large img {
+  width: 100%;
+  display: block;
+}
+
+.image-block .small {
+  width: 35%;
+}
+
+.image-block .small img {
+  width: 100%;
+  display: block;
+}
+
+
+/* ======== PIED DE PAGE ======== */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: 'Zilla Slab', serif;
+  background-color: var(--background-color);
+}
+
+footer h1 {
+  font-size: 2.5rem;
+}
+
+.footer-logo img {
+  width: 80px;
+  margin-top: 1rem;
+}
